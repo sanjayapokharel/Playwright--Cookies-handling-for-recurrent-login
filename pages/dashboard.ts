@@ -21,7 +21,7 @@ export class DashboardPage {
     async verifyDashboardLoad() {
         await expect(this.midText).toBeVisible();
         await expect(this.midText).toContainText('Travel: A companion that collects memories');
-        await this.page.waitForTimeout(3000);
+        await this.page.waitForTimeout(5000);
 
     }
     async closePopupIfVisible() {
